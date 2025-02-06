@@ -20,5 +20,5 @@ resource "aws_api_gateway_integration" "login_integration" {
   http_method             = aws_api_gateway_method.login_post.http_method
   type                    = "AWS_PROXY"
   integration_http_method = "POST"
-  uri                     = "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:880587150218:function:LifeManagerLambdaAuth/invocations"
+  uri                     = "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:880587150218:function:LifeManagerLambdaAuth:prod/invocations"
 }
